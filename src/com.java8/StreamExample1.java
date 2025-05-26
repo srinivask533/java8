@@ -9,4 +9,10 @@ public class StreamExample1{
         cityList.stream().foreach(System.out::println);
 
     }
+    public List<Employee> buildEmployees(){
+        for(int i:100){
+            Department department = new Department();
+            department.
+        }
+    }
 }
