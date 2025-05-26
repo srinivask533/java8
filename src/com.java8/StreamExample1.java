@@ -7,5 +7,6 @@ public class StreamExample1{
     public void printList(){
         List<String> cityList = List.of("Hyderbad","Banglore","Chennai");
         cityList.stream().foreach(System.out::println);
+
     }
 }
