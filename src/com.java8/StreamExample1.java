@@ -1,6 +1,8 @@
+package com.java8;
 import java.utiil.*;
+import
 public class StreamExample1{
-    public static void main(String args[]){
+    public static void main(String[] args){
        System.out.println("Hell");
     }
 
@@ -12,7 +14,7 @@ public class StreamExample1{
     public List<Employee> buildEmployees(){
         for(int i:100){
             Department department = new Department();
-            department.
+            department
         }
     }
 }
