@@ -14,7 +14,8 @@ public class StreamExample1{
     public List<Employee> buildEmployees(){
         for(int i:100){
             Department department = new Department();
-            department
+            Employee emp = new Employee();
+            
         }
     }
 }
