@@ -28,5 +28,15 @@ public class SortHashMap {
             sortedByKeyDesc.put(k, map.get(k));
         }
         System.out.println("Sorted by key (reverse): " + sortedByKeyDesc);
+
+        sortMapkeys(map);
     }
+
+    public static void sortMapkeys(Map<String, Integer> map){
+        TreeMap treeMap  = new TreeMap(map);
+        System.out.println(treeMap);
+
+    }
+
+
 }

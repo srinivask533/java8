@@ -1,5 +1,6 @@
 package src.com.logical;
 
+import java.io.InputStream;
 import java.util.List;
 import java.util.stream.Stream;
 import java.util.stream.IntStream;
@@ -12,6 +13,7 @@ public class SeparateZeros {
             System.out.print(num + " ");
         }
         usingStreams(arr);
+        usingStreamsPrac1(arr);
     }
 
     private static void usingStreams(int[] arr) {
@@ -27,6 +29,11 @@ public class SeparateZeros {
         // Print the result
         System.out.println();
         result.forEach(n -> System.out.print(n + " "));
+    }
+    private static void usingStreamsPrac1(int[] arr){
+        List<Integer> list = IntStream.of(arr).boxed().toList();
+        List result = Stream.concat(list.stream().filter(n->n != 0),list.stream().filter(n->n==0)).toList();
+        result.forEach(n->System.out.print(n+""));
     }
 
     public static void separateZeros(int[] arr) {
