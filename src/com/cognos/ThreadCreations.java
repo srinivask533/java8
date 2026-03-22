@@ -19,5 +19,7 @@ class ThreadCollable implements Callable {
 }
 
 public class ThreadCreations {
- public static void main()
+ public static void main(){
+
+ }
 }
