@@ -10,7 +10,14 @@ sealed  interface PaymentSerivce permits CreditCardPayment, DebitCardPayment{
         System.out.println("Paying with debit card: " + amount);
     }
 }
-final class VisaDebitCard  implements DebitCardPayment {
+sealed class VisaDebitCard  implements DebitCardPayment {
+    @Override
+    public void pay(double amount) {
+        System.out.println("Paying with debit card: " + amount);
+    }
+}
+
+final class VisaDebitCard2 extends VisaDebitCard {
     @Override
     public void pay(double amount) {
         System.out.println("Paying with debit card: " + amount);
