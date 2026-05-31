@@ -1,12 +1,25 @@
 package src.com.cognos;
 
-class A implements Add,Substract {
+ class A implements Add,Substract, PaymentService {
 
     @Override
     public int add(int a, int b) {
         return 0;
     }
 
+
+    @Override
+    public void pay(double amount) {
+
+    }
+
+    @Override
+    public int substract(int a, int b) {
+        return 0;
+    }
+}
+
+class B extends A {
 
 }
 
