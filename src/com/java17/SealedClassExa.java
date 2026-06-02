@@ -17,7 +17,13 @@ sealed class VisaDebitCard  implements DebitCardPayment {
     }
 }
 
-final class VisaDebitCard2 extends VisaDebitCard {
+non-sealed  class VisaDebitCard2 extends VisaDebitCard {
+    @Override
+    public void pay(double amount) {
+        System.out.println("Paying with debit card: " + amount);
+    }
+}
+final class VIsaDebitCard3 extends VisaDebitCard {
     @Override
     public void pay(double amount) {
         System.out.println("Paying with debit card: " + amount);
