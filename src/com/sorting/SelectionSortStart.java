@@ -5,7 +5,7 @@ public class SelectionSortStart {
         int[] arr = {10,6,-1,5,3,8};
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<=arr.length-1;j++){
-                if(arr[j]>arr[i]){
+                if(arr[j]<arr[i]){
                     int temp = arr[j];
                     //System.out.println(temp+" temp");
                      arr[j] = arr[i];

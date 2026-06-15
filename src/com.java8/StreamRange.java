@@ -24,6 +24,14 @@ public class StreamRange {
         List<Integer> missedNum = IntStream.rangeClosed(1,10).boxed().filter(i->!intSet.contains(i)).collect(Collectors.toList());
         System.out.println(missedNum);
 
+
+
+        //practice2
+        Set<Integer> intSet2 = Arrays.stream(arry).boxed().collect(Collectors.toSet());
+        List<Integer> missedIntegers = IntStream.rangeClosed(1,10).boxed().filter(i ->!intSet2.contains(i)).collect(Collectors.toList());
+        missedIntegers.stream().forEach(System.out::println);
+
+
     }
 
 

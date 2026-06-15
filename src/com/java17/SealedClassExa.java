@@ -23,6 +23,12 @@ non-sealed  class VisaDebitCard2 extends VisaDebitCard {
         System.out.println("Paying with debit card: " + amount);
     }
 }
+class Test extends VisaDebitCard2{
+    @Override
+    public void pay(double amount) {
+        super.pay(amount);
+    }
+}
 final class VIsaDebitCard3 extends VisaDebitCard {
     @Override
     public void pay(double amount) {
