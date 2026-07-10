@@ -14,12 +14,13 @@ class ThreadRunnable implements Runnable {
 class ThreadCollable implements Callable {
     @Override
     public Object call() throws Exception {
-        return null;
+        return 10;
     }
 }
 
 public class ThreadCreations {
  public static void main(){
+            Thread thread = new Thread();
 
  }
 }

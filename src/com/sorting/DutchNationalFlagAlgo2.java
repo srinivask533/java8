@@ -9,28 +9,45 @@ public class DutchNationalFlagAlgo2 {
         while(mid <= hight) {
             switch (arr[mid]){
                 case 0:
-                    swapElements(arr,low,mid);
+                    swapLowAndMidElements(arr,low,mid);
                     low++;
                     mid++;
+                    System.out.println("Sorted Array: Case1");
+                    printArray(arr);
                     break;
                 case 1:
                     mid++;
+                    System.out.println("Sorted Array:Case2");
+                    printArray(arr);
                     break;
                 case 2:
-                    swapElements(arr,mid,hight);
+                    swapMidAndHighElements(arr,mid,hight);
                     hight--;
-                    mid++;
+                    System.out.println("Sorted Array:Case2");
+                    printArray(arr);
                     break;
             }
         }
-        for(int i : arr)
-            System.out.println(arr[i]);
 
+        System.out.println("Sorted Array:");
+       // printArray(arr);
     }
 
-    private static void swapElements(int[] arr,int low,int mid) {
+    private static void printArray(int[] arr) {
+        for(int i : arr)
+            System.out.print(i + " ");
+        System.out.println();
+    }
+
+    private static void swapLowAndMidElements(int[] arr,int low,int mid) {
         int temp = arr[low];
          arr[low] = arr[mid];
+        arr[mid] = temp;
+
+    }
+    private static void swapMidAndHighElements(int[] arr,int mid,int hight) {
+        int temp = arr[hight];
+        arr[hight] = arr[mid];
         arr[mid] = temp;
     }
 }
