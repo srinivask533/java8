@@ -3,8 +3,8 @@ package src.com.cognos;
 //    void substract();
 //}
 @FunctionalInterface
-public interface Add {// extends BB{
-    //@TODO  FunctionalInterface cannot extened anotehr interface
+public interface Add {// extends BInterface {// extends BB{
+    //@TODO  FunctionalInterface cannot extened anotehr functional interface and interface
     //@TODO Fuctional inetface cnnot be a sealed
 
      int add(int a, int b);

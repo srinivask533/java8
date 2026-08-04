@@ -17,7 +17,12 @@ package src.com.cognos;
     public int substract(int a, int b) {
         return 0;
     }
-}
+
+     //@Override
+     public void hello() {
+
+     }
+ }
 
 class B extends A {
 

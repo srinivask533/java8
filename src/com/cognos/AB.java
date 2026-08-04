@@ -6,6 +6,11 @@ public sealed class AB implements Add {
         return 0;
     }
 
+    //@Override
+    public void hello() {
+
+    }
+
     final class ABC extends  AB {
 
     }
