@@ -47,3 +47,15 @@ public class EmployeeSort {
     private String name;
     private String lastName;
 }
+// Oracle Questsions
+//// Given the list of integers , remove duplicates and sort them in descending order
+//// steam().distinct() -->remove duplication methods
+//.// sorted() method Comparator.reverseOrder();
+//
+////gind the given odd number and event numbers
+//        .steam().filter(e->e%2!=0)
+//
+//// we have list of intergers get 2nd and 3rd elemetns from it and restun them in list
+//list.stream().skip(1).limit(2).collect(Collectors.listList())
+//
+//// find the second hight number in the list
