@@ -1,6 +1,9 @@
 package src.com.cognos;
 
- class A implements Add,Substract, PaymentService {
+import java.util.Arrays;
+import java.util.List;
+
+class A implements Add,Substract, PaymentService {
 
     @Override
     public int add(int a, int b) {
@@ -34,5 +37,7 @@ public class FunctionIntefr {
         System.out.println(a.add(10, 20));
         Add b = (x, y) -> x + y;
         System.out.println(a.add(10, 20)); // Output: 30
+
+
     }
 }
